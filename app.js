@@ -6,7 +6,7 @@ var AssistantV2 = require('ibm-watson/assistant/v2'); // watson sdk
 const { IamAuthenticator, BearerTokenAuthenticator } = require('ibm-watson/auth');
 
 var app = express();
-require('./health/health')(app);
+// require('./health/health')(app);
 
 // Bootstrap application settings
 app.use(express.static('./public')); // load UI from public folder

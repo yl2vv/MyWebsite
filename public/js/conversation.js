@@ -6,7 +6,7 @@
 var ConversationPanel = (function () {
   var settings = {
     selectors: {
-      chatBox: '#scrollingChat',
+      chatBox: '#response',
       fromUser: '.from-user',
       fromWatson: '.from-watson',
       latest: '.latest'
@@ -103,9 +103,9 @@ var ConversationPanel = (function () {
 
   // Constructs new DOM element from a message
   function getDivObject(res) {
-    var classes = ['from-watson', 'latest'];
     var messageJson = {
       'tagName': 'p',
+      'class': 'responseText',
       'text': res.innerhtml
     };
     return Common.buildDomElement(messageJson);
