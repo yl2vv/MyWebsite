@@ -52,7 +52,7 @@ div {
 .myFace {
   width: 25%;
   height: 45%;
-  background-color: red;
+  /* background-color: red; */
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -74,13 +74,36 @@ div {
   }
 }
 
+/* .WatsonResponse {
+  overflow: hidden; 
+  overflow-y:scroll;
+  border-right: .15em solid orange; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  background-color: red;
+  width: 50%;
+  letter-spacing: .15em;
+  animation: 
+    typing 3.0s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
 
+@keyframes typing {
+  from { width: 0 }
+  to { width: 50% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+*/
 
 .WatsonResponse {
   width: 50%;
   height: 15%;
-  overflow-y:scroll;
-  background-color: blue;
+  overflow-y:auto;
+  /* background-color: blue; */
 }
 @media (max-width: 900px) {
   .WatsonResponse{
