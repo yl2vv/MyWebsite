@@ -1,19 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Helvetica, Helvetica Neue, Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #222823;
-  height: 100%
-}
-
-div {
-  word-wrap: break-word;
-  line-height: 1.25rem;
-}
-
-
-#contentParent {
-  height: 97%;
+  /* background-color: #222823; */
+  background-color: #34495E;
 }
 
 .responsive-columns-wrapper {
@@ -30,6 +24,12 @@ div {
   -ms-flex: 1;
   flex: 1;
   overflow: auto;
+}
+
+
+
+#home {
+  height: 100vh;
 }
 
 #chat-column-holder {
@@ -65,8 +65,8 @@ div {
 
 @media (max-width: 770px) {
   .myFace {
-    width: 28%;
-    height: 23%;
+    width: 30%;
+    height: 30%;
   }
   .myFace:hover {
     width: 29%;
@@ -74,14 +74,13 @@ div {
   }
 }
 
-/* .WatsonResponse {
-  overflow: hidden; 
-  overflow-y:scroll;
+/* .responseText {
+  overflow-y: hidden;
   border-right: .15em solid orange; 
   white-space: nowrap; 
   margin: 0 auto; 
   background-color: red;
-  width: 50%;
+  height: auto;
   letter-spacing: .15em;
   animation: 
     typing 3.0s steps(40, end),
@@ -89,28 +88,28 @@ div {
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 50% }
+  from { width: 0}
+  to { width: 50%}
+  
 }
 
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange; }
-}
-*/
+} */
+
 
 .WatsonResponse {
   width: 50%;
-  height: 15%;
-  overflow-y:auto;
-  /* background-color: blue; */
+  height: auto;
+  /* overflow-y:auto; */
 }
 @media (max-width: 900px) {
   .WatsonResponse{
    width: 80%;
    height: 13%;
   }
-}
+} 
 
 .from-watson {
   margin: 0.3125rem;
@@ -165,9 +164,46 @@ p {
   }
 }
 
+#about {
+  height: 40rem;
+}
+@media(max-width: 770px) {
+  #chatbot {
+    height: 30rem;
+  }
+}
+
+#skills {
+  height: 40rem;
+}
+@media(max-width: 770px) {
+  #chatbot {
+    height: 30rem;
+  }
+}
+
+#experience {
+  height: 40rem;
+}
+@media(max-width: 770px) {
+  #chatbot {
+    height: 30rem;
+  }
+}
+
+#contact {
+  height: 40rem;
+}
+@media(max-width: 770px) {
+  #chatbot {
+    height: 30rem;
+  }
+}
+
 footer {
   color: #f4f4f2;
   text-align: center;
   font-family: Helvetica, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 10px;
 }
+

@@ -1,21 +1,10 @@
 {
   "name": "@ibm-watson/assistant-simple",
-  "description": "A simple Node.js based web app which shows how to use the Watson Assistant API to recognize user intents.",
+  "description": "Personal Website for James Yubin Lim",
   "version": "0.1.1",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "test-integration": "casperjs test ./test/integration/test.*.js",
-    "test-integration-runner": "NODE_ENV=test node casper-runner.js",
-    "test": "npm run lint && npm run test-integration-runner",
-    "test-unit": "jest test/unit --coverage",
-    "lint": "eslint .",
-    "autofix": "eslint --fix .",
-    "codecov": "npm run test && (codecov || true)"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/watson-developer-cloud/assistant-simple.git"
+    "start": "node server.js"
   },
   "license": "Apache-2.0",
   "dependencies": {
@@ -23,10 +12,6 @@
     "dotenv": "^6.2.0",
     "express": "^4.17.1",
     "ibm-watson": "^5.1.0"
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "access": "public"
   },
   "engines": {
     "node": ">=12"
@@ -40,13 +25,6 @@
     "jest": "^24.9.0",
     "phantomjs-prebuilt": "^2.1.16",
     "supertest": "^4.0.2"
-  },
-  "bugs": {
-    "url": "https://github.com/watson-developer-cloud/assistant-simple/issues"
-  },
-  "homepage": "https://github.com/watson-developer-cloud/assistant-simple#readme",
-  "directories": {
-    "test": "test"
   },
   "author": ""
 }
