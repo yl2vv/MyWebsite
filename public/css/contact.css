@@ -12,16 +12,32 @@
 .contactTitle h1 {
     font-size: 50px;
     line-height: 40px;
-    /* animation: text 3s 1;
-    animation-iteration-count: infinite; */
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.contactTitle h2 {
+    font-size: 30px;
+    line-height: 30px;
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
-/* @keyframes text {
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
 
-    0% {
-        letter-spacing: 25px;
-    }
-} */
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
 
 .contactTitle h1::after {
     content: ""; 
@@ -31,30 +47,6 @@
     padding-top: 10px; 
     border-bottom: 2px solid #f4f4f2;
 }
-
-.contactTitle h2 {
-    font-size: 32px;
-    color: #f4f4f2;
-    overflow-y: hidden;
-    border-right: .15em solid orange; 
-    white-space: nowrap; 
-    margin: 0 auto; 
-    height: auto;
-    letter-spacing: .15em;
-    animation: 
-      typing 3.0s steps(40, end),
-      blink-caret .75s step-end infinite;
-}
-@keyframes typing {
-    from { width: 0}
-    to { width: 30%}
-    
-  }
-  
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
 
 
 
@@ -104,7 +96,7 @@ form .submit {
     width: 20%
 }
 form .submit:hover {
-    background-color: #F7DC6F;
+    background-color: #F08080;
     color: #f4f4f2;
 }
 @media(max-width: 800px) {

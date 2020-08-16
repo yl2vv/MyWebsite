@@ -1,7 +1,8 @@
 .navbar {
     padding: 0.7rem;
     transition: top 0.3s;
-    background-color: rgba(52, 73, 94, 0.7);
+    /* background-color: rgba(52, 73, 94, 0.7); */
+    background-color: rgba(40, 116, 166, 0.7);
 
   }
 
@@ -15,15 +16,16 @@
 }
 
 .navbar-brand {
-    font-size: 1.4em !important;
+    font-size: 1.5em !important;
     color: #f4f4f2 !important;
 }
 
 .navbar-brand:hover {
-    font-size: 1.5em !important;
-    color: #F7DC6F !important;
+    /* color: #F7DC6F !important; */
+    color: #F08080 !important;
 }
 
 .nav-link:hover {
-    color:#F7DC6F !important;
+    /* color:#F7DC6F !important; */
+    color: #F08080  !important;
 }
