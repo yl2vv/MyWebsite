@@ -9,7 +9,7 @@ body {
   /* background-color: #222823; */
   /* background-color: #34495E; */
   /* background-image: linear-gradient(#5D6D7E, #34495E); */
-  background-image: linear-gradient(#2980B9 , #154360 );
+  background-image: linear-gradient(#2980B9 , #212F3D );
 }
 
 .responsive-columns-wrapper {
@@ -28,22 +28,31 @@ body {
   overflow: auto;
 }
 
-
-#about {
-  height: 40rem;
-}
-@media(max-width: 770px) {
-  #chatbot {
-    height: 30rem;
-  }
+.sectionTitle {
+  padding-top: 80px;
+  text-transform: uppercase;
+  color: #f4f4f2;
 }
 
-#experience {
-  height: 40rem;
+.sectionHead {
+  font-size: 50px;
+  line-height: 40px;
+  animation-name: floating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
-@media(max-width: 770px) {
-  #chatbot {
-    height: 30rem;
-  }
+
+.floating {  
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 15px); }
+  to   { transform: translate(0, -0px); }    
 }
 
