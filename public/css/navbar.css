@@ -14,7 +14,17 @@
     color: #f4f4f2 !important;
 }
 
+.navbar-brand {
+    font-size: 1.4em !important;
+    color: #f4f4f2 !important;
+}
+
+.navbar-brand:hover {
+    font-size: 1.5em !important;
+    color: #F7DC6F !important;
+}
+
 .nav-link:hover {
-    color:white !important;
+    color:#F7DC6F !important;
     text-decoration: underline;
 }

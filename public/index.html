@@ -3,23 +3,25 @@
   <base href="/">
   <title>James's Website</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/chat.css">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
   <!-- NavBar -->
   <nav id ="navbar" class="navbar navbar-expand-md navbar-dark sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#chat-column-holder">James Yubin Lim</a>
+      <a class="navbar-brand" href="#top">James Yubin Lim</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto justify-content-end">
           <li class="nav-item active">
-            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#chat">Chat</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
@@ -52,7 +54,7 @@
   </script>
 
   <div>
-    <div id="home" class="responsive-columns-wrapper">
+    <div id="chat" class="responsive-columns-wrapper">
 
       <div id="chat-column-holder" class="responsive-column content-column">
         <div class="chat-column">
@@ -60,6 +62,12 @@
           <div class="myFace">
           </div>
           <input id="textInput" placeholder="Type something" type="text" onkeydown="ConversationPanel.inputKeyDown(event, this)" autofocus>
+          <div class="iconLinks">
+            <a href="https://www.linkedin.com/in/yl2vv/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://github.com/yl2vv/" target="_blank" class="fa fa-github"></a>
+            <a href="images/resume.pdf" target="_blank" class="fa fa-paperclip"></a>
+            <a href="https://open.spotify.com/user/225d4wfyn23jrjaoude2efeai?si=q4-6pfBYSqOO3g9wm1KQxQ" target="_blank" class="fa fa-spotify"></a>
+          </div>
         </div>
       </div>
   
