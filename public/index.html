@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/chat.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -92,17 +94,33 @@
     </div>
   
     <div id="contact">
-      <h1>Contact</h1>
+      <div class="contactTitle">
+        <h1>Say Hello</h1>
+        <h2>Thanks for stopping by!</h2>
+      </div>
+
+        <div class="contactForm">
+          <form id="contact-form" method="post" action="">
+            <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+            <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+            <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+            <input type="submit" class="form-control submit" value="SEND MESSAGE">
+          </form>
+        </div>
+
     </div>
   </div>
 
-  <footer>Created by James Yubin Lim</footer>
+  <div class="bottom">
+    <footer>Created by James Yubin Lim</footer>
+    <div class="meWave"></div>
+  </div>
 
-  <script src="js/common.js"></script>
-  <script src="js/api.js"></script>
-  <script src="js/conversation.js"></script>
-  <script src="js/payload.js"></script>
-  <script src="js/global.js"></script>
+  <script src="code/common.js"></script>
+  <script src="code/api.js"></script>
+  <script src="code/conversation.js"></script>
+  <script src="code/payload.js"></script>
+  <script src="code/global.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>  

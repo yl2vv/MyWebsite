@@ -54,19 +54,3 @@ body {
   }
 }
 
-#contact {
-  height: 40rem;
-}
-@media(max-width: 770px) {
-  #chatbot {
-    height: 30rem;
-  }
-}
-
-footer {
-  color: #f4f4f2;
-  text-align: center;
-  font-family: Helvetica, Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 10px;
-}
-

@@ -1,0 +1,120 @@
+#contact {
+    height: 95vh;
+    text-align: center;
+}
+
+.contactTitle {
+    padding-top: 80px;
+    text-transform: uppercase;
+    color: #f4f4f2;
+}
+
+.contactTitle h1 {
+    font-size: 50px;
+    line-height: 40px;
+    /* animation: text 3s 1;
+    animation-iteration-count: infinite; */
+}
+
+/* @keyframes text {
+
+    0% {
+        letter-spacing: 25px;
+    }
+} */
+
+.contactTitle h1::after {
+    content: ""; 
+    display: block; 
+    margin: 0 auto; 
+    width: 50%; 
+    padding-top: 10px; 
+    border-bottom: 2px solid #f4f4f2;
+}
+
+.contactTitle h2 {
+    font-size: 32px;
+    color: #f4f4f2;
+    overflow-y: hidden;
+    border-right: .15em solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    height: auto;
+    letter-spacing: .15em;
+    animation: 
+      typing 3.0s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0}
+    to { width: 30%}
+    
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+
+
+.contactForm {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.form-control {
+    width: 40%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #f4f4f2;
+    color: #f4f4f2;
+    font-size: 18px;
+    margin-bottom: 30px;
+    display: inline-block
+}
+@media(max-width: 1000px) {
+    .form-control {
+      width: 60%;
+    }
+  }
+@media(max-width: 800px) {
+    .form-control {
+      width: 70%;
+    }
+  }
+@media(max-width: 600px) {
+    .form-control {
+      width: 80%;
+    }
+}
+.form-control::placeholder {
+    color: #f4f4f2;
+    opacity: 1;
+}
+.form-control[type=text]:focus {
+    background-color: #f4f4f2;
+    color: #34495E;
+}
+
+form .submit {
+    background-color: #f4f4f2;
+    color: #34495E;
+    width: 20%
+}
+form .submit:hover {
+    background-color: #F7DC6F;
+    color: #f4f4f2;
+}
+@media(max-width: 800px) {
+    form .submit {
+      width: 40%;
+    }
+}
+@media(max-width: 700px) {
+    form .submit {
+      width: 40%;
+    }
+}
+
