@@ -98,11 +98,10 @@
     margin-bottom: -0.125rem;
     font-family: Helvetica, Helvetica Neue, Helvetica, Arial, sans-serif;
     display: block;
-    border-bottom: 0.0625rem solid #aeaeae;
+    border-bottom: 0.0625rem solid #f4f4f2;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     width: 50%;
-    /* background-color: red; */
   }
   @media (max-width: 770px) {
     #textInput
