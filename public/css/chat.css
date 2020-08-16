@@ -29,8 +29,7 @@
     background-image: url("/images/me.PNG");
   }
   .myFace:hover {
-    width: 26%;
-    height: 46%;
+    background-image: url("/images/me2.PNG");
   }
   
   @media (max-width: 770px) {
@@ -39,8 +38,7 @@
       height: 30%;
     }
     .myFace:hover {
-      width: 29%;
-      height: 24%;
+      background-image: url("/images/me.PNG");
     }
   }
   
