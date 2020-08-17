@@ -137,6 +137,30 @@
     justify-content: center;
   }
 
+  .fab {
+    padding: 30px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+  }
+  @media (max-width: 1000px) {
+    .fab {
+      padding: 20px;
+      font-size: 20px;
+      width: 30px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+      color: white;
+    }
+    .fa-linkedin-in {
+      padding-right: 0;
+    }
+  }
+
 
   .fa {
     padding: 30px;
@@ -157,16 +181,21 @@
       border-radius: 50%;
       color: white;
     }
-    .fa-linkedin {
+    .fa-linkedin-in {
       padding-right: 0;
     }
   }
   
-  .fa-linkedin {
+  .fa-linkedin-in {
     padding-left: 0;
   }
 
   .fa:hover {
+    color: #F08080;
+    text-decoration: none;
+  }
+
+  .fab:hover {
     color: #F08080;
     text-decoration: none;
   }
