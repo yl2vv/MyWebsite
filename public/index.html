@@ -3,7 +3,8 @@
   <base href="/">
   <title>James's Website</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/navbar.css">
@@ -73,10 +74,10 @@
           </div>
           <input id="textInput" placeholder="Type something" type="text" onkeydown="ConversationPanel.inputKeyDown(event, this)" autofocus>
           <div class="iconLinks">
-            <a href="https://www.linkedin.com/in/yl2vv/" target="_blank" class="fa fa-linkedin"></a>
-            <a href="https://github.com/yl2vv/" target="_blank" class="fa fa-github"></a>
+            <a href="https://www.linkedin.com/in/yl2vv/" target="_blank" class="fab fa-linkedin-in"></a>
+            <a href="https://github.com/yl2vv/" target="_blank" class="fab fa-github"></a>
             <a href="images/resume.pdf" target="_blank" class="fa fa-paperclip"></a>
-            <a href="https://open.spotify.com/user/225d4wfyn23jrjaoude2efeai?si=q4-6pfBYSqOO3g9wm1KQxQ" target="_blank" class="fa fa-spotify"></a>
+            <a href="https://open.spotify.com/user/225d4wfyn23jrjaoude2efeai?si=q4-6pfBYSqOO3g9wm1KQxQ" target="_blank" class="fab fa-spotify"></a>
           </div>
         </div>
       </div>
@@ -93,6 +94,62 @@
       <div class="sectionTitle">
         <h1 class="sectionHead">About</h1>
       </div>
+
+      <div class="aboutMe">
+        <div id="carouselIndicators" class="carousel slide myBio" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselIndicators" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div>
+                <h2 class="BioHeader">WHO I AM</h2>
+                <p class="aboutMeText">
+                  My name is Yubin Lim. I am a fourth year at the University of Virginia majoring in computer science in the College of Arts and Sciences. Last summer I was a Back-End Developer Intern at IBM and currently continuing as a co-op. <br>
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <p class="aboutMeText">
+                My biggest achievement would be to benefit as many people as I can through my works. Growing up, I always told myself that I wanted to be a doctor, simply because medicine was the most practical path through which I would be able to help others. <br>
+                Driven by the creativity and innovation required for the field, I quickly found a passion in computer science during my time At UVA. My creativity which has been suppressed by memorizing biology terms was set loose by the freedom in developing. <br>
+                To me, the biggest difference between a doctor and a developer is that in the former, patients approach you with a problem, while in the latter, stakeholders approach you with a problem… or, as Bill Gates said, you solve problems that did not exist before. <br>
+                My goal is simple: as a software developer, I aspire to use my creativity and passion in developing to help as many people as possible, solving both existing and nonexistent problems.
+
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="myImage"></div>
+      </div>
+
+      <div class="timelineContainer">
+        <h3 class="timelineHeader">Locations</h3>
+        <div class="timeline">
+          <div class="iconContainer">
+            <i class="fas fa-globe-asia"></i>
+          </div>
+          <div class="iconContainer">
+            <i class="fas fa-globe-europe"></i>
+          </div>
+          <div class="iconContainer">
+            <i class="fas fa-globe-americas"></i>
+          </div>
+          <div class="iconContainer">
+            <i class="fas fa-globe-asia"></i>
+          </div>
+          <div class="iconContainer">
+            <i class="fas fa-globe-americas"></i>
+          </div>
+          <div class="iconContainer to-be">
+            <i class="fas fa-globe-americas to-be"></i>
+          </div>
+        </div>
+
+      </div>
+
     </div>
   
     <div id="skills">
@@ -156,6 +213,6 @@
   <script src="code/global.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>  
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>  
 </body>
 </html>
