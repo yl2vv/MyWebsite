@@ -28,7 +28,6 @@
   background-position: center;
   background-image: url("/images/myImage.JPG");
   border: 5px solid #f4f4f2;
-  background-color: blue;
   margin-left: 20%;
 }
 .myImage:hover {
