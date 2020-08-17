@@ -105,7 +105,7 @@ var ConversationPanel = (function () {
   function getDivObject(res) {
     var messageJson = {
       'tagName': 'p',
-      'classNames': ['responseText'],
+      'classNames': ['responseText', 'pChat'],
       'text': res.innerhtml
     };
     return Common.buildDomElement(messageJson);

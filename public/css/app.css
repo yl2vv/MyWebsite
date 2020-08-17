@@ -12,6 +12,17 @@ body {
   /* background-image: linear-gradient(to bottom, #f7dc6f, #f7c459, #f6ab49, #f4903e, #f0753a, #e85b4d, #d7465d, #bf386b,  #313b5c, #212f3c); */
 }
 
+p {
+  color: #f4f4f2;
+  font-size: 1.2rem;
+  padding-left: 5px;
+}
+@media (max-width: 770px) {
+  p {
+    font-size: 0.8rem;
+  }
+}
+
 .responsive-columns-wrapper {
   display: -ms-flexbox;
   display: -webkit-flex;
