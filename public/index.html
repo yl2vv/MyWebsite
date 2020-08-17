@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/chat.css">
   <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/timeline.css">
   <link rel="stylesheet" href="css/skills.css">
   <link rel="stylesheet" href="css/experience.css">
   <link rel="stylesheet" href="css/projects.css">
@@ -82,12 +83,12 @@
         </div>
       </div>
   
-      <div id="payload-column" class="fixed-column content-column">
+      <!-- <div id="payload-column" class="fixed-column content-column">
         <div id="payload-initial-message">
         </div>
         <div id="payload-request" class="payload"></div>
         <div id="payload-response" class="payload"></div>
-      </div>
+      </div> -->
     </div>
   
     <div id="about">
@@ -100,56 +101,87 @@
           <ol class="carousel-indicators">
             <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselIndicators" data-slide-to="2"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
+              <div class="myImage"></div>
+            </div>
+            <div class="carousel-item">
               <div>
                 <h2 class="BioHeader">WHO I AM</h2>
                 <p class="aboutMeText">
-                  My name is Yubin Lim. I am a fourth year at the University of Virginia majoring in computer science in the College of Arts and Sciences. Last summer I was a Back-End Developer Intern at IBM and currently continuing as a co-op. <br>
+                  My name is Yubin Lim. I am a fourth year at the <span class="uva">University of Virginia</span> majoring in computer science in the College of Arts and Sciences.<br><br>
+                  Last summer I was a Back-End Developer Intern at <span class="ibm">IBM</span> and currently continuing as a co-op.
                 </p>
               </div>
             </div>
             <div class="carousel-item">
               <p class="aboutMeText">
-                My biggest achievement would be to benefit as many people as I can through my works. Growing up, I always told myself that I wanted to be a doctor, simply because medicine was the most practical path through which I would be able to help others. <br>
-                Driven by the creativity and innovation required for the field, I quickly found a passion in computer science during my time At UVA. My creativity which has been suppressed by memorizing biology terms was set loose by the freedom in developing. <br>
-                To me, the biggest difference between a doctor and a developer is that in the former, patients approach you with a problem, while in the latter, stakeholders approach you with a problem… or, as Bill Gates said, you solve problems that did not exist before. <br>
-                My goal is simple: as a software developer, I aspire to use my creativity and passion in developing to help as many people as possible, solving both existing and nonexistent problems.
+                My biggest achievement would be to benefit as many people as I can through my works. 
+                Growing up, I always told myself that I wanted to be a doctor, simply because medicine was the most practical path through which I would be able to help others. <br>
+                Driven by the creativity and innovation required for the field, I quickly found a passion in computer science during my time At UVA. 
+                My creativity which has been suppressed by memorizing biology terms was set loose by the freedom in developing. <br>
+                To me, the biggest difference between a doctor and a developer is that in the former, 
+                patients approach you with a problem, while in the latter, stakeholders approach you with a problem… or, 
+                as Bill Gates said, you solve problems that did not exist before. <br>
+                <span class="myGoal">My goal</span> is simple: as a software developer, I aspire to use my creativity and passion in developing to help as many people as possible,
+                 solving both existing and nonexistent problems.
 
               </p>
             </div>
           </div>
         </div>
-
-        <div class="myImage"></div>
       </div>
+    </div>
 
-      <div class="timelineContainer">
-        <h3 class="timelineHeader">Locations</h3>
-        <div class="timeline">
-          <div class="iconContainer">
-            <i class="fas fa-globe-asia"></i>
-          </div>
-          <div class="iconContainer">
-            <i class="fas fa-globe-europe"></i>
-          </div>
-          <div class="iconContainer">
-            <i class="fas fa-globe-americas"></i>
-          </div>
-          <div class="iconContainer">
-            <i class="fas fa-globe-asia"></i>
-          </div>
-          <div class="iconContainer">
-            <i class="fas fa-globe-americas"></i>
-          </div>
-          <div class="iconContainer to-be">
-            <i class="fas fa-globe-americas to-be"></i>
-          </div>
+    <div class="timelineContainer">
+      <h3 class="timelineHeader">Travel History</h3>
+      <div class="timeline">
+        <div class="iconContainer">
+          <i class="fas fa-globe-asia"></i>
         </div>
+        <div class="iconContainer">
+          <i class="fas fa-globe-europe"></i>
+        </div>
+        <div class="iconContainer">
+          <i class="fas fa-globe-americas"></i>
+        </div>
+        <div class="iconContainer">
+          <i class="fas fa-globe-asia"></i>
+        </div>
+        <div class="iconContainer">
+          <i class="fas fa-globe-americas"></i>
+        </div>
+        <div class="iconContainer to-be">
+          <i class="fas fa-globe-americas to-be"></i>
+        </div>
+      </div>
+      <!-- <div class="timelineDescription">
+        <div class="timeline-content">
+          <h2>Production</h2>
+          <p>Lorem</p>
+        </div>
+        <div class="timeline-content">
+          <h2>Production</h2>
+          <p>Lorem</p>
+        </div>          <div class="timeline-content">
+          <h2>Production</h2>
+          <p>Lorem</p>
+        </div>          <div class="timeline-content">
+          <h2>Production</h2>
+          <p>Lorem</p>
+        </div>          <div class="timeline-content">
+          <h2>Production</h2>
+          <p>Lorem</p>
+        </div>          <div class="timeline-content">
+          <h2>Production</h2>
+          <p>Lorem</p>
+        </div>
+      </div> -->
+      <div class="timelineText">
 
       </div>
-
     </div>
   
     <div id="skills">
@@ -177,7 +209,7 @@
       </div>
 
         <div class="contactForm">
-          <form id="contact-form" method="post" action="">
+          <form id="contact-form" method="" action="">
             <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
             <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
             <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
@@ -206,11 +238,11 @@
     <div class="meWave"></div>
   </div>
 
-  <script src="code/common.js"></script>
+  <!-- <script src="code/common.js"></script>
   <script src="code/api.js"></script>
   <script src="code/conversation.js"></script>
   <script src="code/payload.js"></script>
-  <script src="code/global.js"></script>
+  <script src="code/global.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>  
