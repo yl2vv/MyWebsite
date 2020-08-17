@@ -30,6 +30,7 @@ body {
   padding-top: 80px;
   text-transform: uppercase;
   color: #f4f4f2;
+  /* background-color: yellow; */
 }
 
 .sectionHead {
@@ -50,7 +51,7 @@ body {
 
 @keyframes floating {
   from { transform: translate(0,  0px); }
-  65%  { transform: translate(0, 15px); }
+  65%  { transform: translate(0, 18px); }
   to   { transform: translate(0, -0px); }    
 }
 
