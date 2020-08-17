@@ -1,6 +1,8 @@
 #skills {
-    height: 110vh;
+    height: 120vh;
     text-align: center;
+    overflow:hidden;
+    margin-top: 10vh;
 }
 
 .skills {
@@ -22,6 +24,7 @@
   .sphere {
     transform-style: preserve-3d;
     animation: rotate 20s infinite linear;
+    position: absolute;
     width: 100%;
     height: 100%;
     transform-origin: 50% 50%;
@@ -46,16 +49,15 @@
 
   .fasSkills {
     padding: 30px;
-    width: 30px;
+    font-size: 50px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
     color: white;
   }
     .fasSkills:hover {
-        color: #F08080;
         text-decoration: none;
-        font-size: 100px;
+        color: #F08080;
       }
   
   .face {
