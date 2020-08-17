@@ -44,20 +44,17 @@
   max-height: 90%;
   overflow-y: scroll;
 }
+.aboutMeText:hover {
+  background-color: rgb(214, 234, 248, 0.8);
+}
 .aboutMeText:hover > span.ibm {
   color:#006699;
-  text-transform: uppercase;
-  font-size: 20px;
 }
 .aboutMeText:hover > span.uva {
   color:#EB984E;
-  text-transform: uppercase;
-  font-size: 20px;
 }
 .aboutMeText:hover > span.myGoal {
   color:#F08080;
-  text-transform: uppercase;
-  font-size: 20px;
 }
 
 

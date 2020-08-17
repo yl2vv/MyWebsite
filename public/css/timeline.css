@@ -24,7 +24,7 @@
     margin-top: 50px;
     background-color: #D6EAF8;
     border-radius: 15px;
-    height: 10px;
+    height: 5px;
     width: 85%;
     margin-left: 7.5%;
   }
@@ -85,6 +85,10 @@
       width: 30px;
     }
     .iconContainer.to-be:hover {
+      height: 40px;
+      width: 40px;
+    }
+    .iconContainer:hover {
       height: 40px;
       width: 40px;
     }
