@@ -21,6 +21,7 @@
     padding: 7px;
     overflow-y: scroll;
 }
+
 @media (max-width: 1000px) {
     .project {
         width: 35vh;
@@ -30,41 +31,44 @@
 
 .project.HoosSearching {
     background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/images/hoosSearching.jpg");
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/hoosSearching.jpg");
 }
 
 .project.quickTutor {
     background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/images/quickTutor.png");
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/quickTutor.png");
 }
 
 .project.website {
     background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/images/website.png");
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/website.png");
 }
 
 .hiddenText {
     display: none;
 }
+
 .project:hover {
     width: 58vh;
     height: 58vh;
     background: rgb(214, 234, 248, 0.5);
 }
+
 @media (max-width: 1000px) {
     .project:hover {
         width: 37vh;
         height: 37vh;
     }
 }
+
 .project:hover .hiddenText {
-    display:block;
+    display: block;
 }
 
 .hiddenText {

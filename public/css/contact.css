@@ -17,6 +17,7 @@
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
+
 .contactTitle h2 {
     font-size: 30px;
     line-height: 30px;
@@ -27,15 +28,13 @@
 }
 
 .contactTitle h1::after {
-    content: ""; 
-    display: block; 
-    margin: 0 auto; 
-    width: 50%; 
-    padding-top: 10px; 
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 10px;
     border-bottom: 2px solid #f4f4f2;
 }
-
-
 
 .contactForm {
     margin-top: 50px;
@@ -53,25 +52,30 @@
     margin-bottom: 30px;
     display: inline-block
 }
+
 @media(max-width: 1000px) {
     .form-control {
-      width: 60%;
-    }
-  }
-@media(max-width: 800px) {
-    .form-control {
-      width: 70%;
-    }
-  }
-@media(max-width: 600px) {
-    .form-control {
-      width: 80%;
+        width: 60%;
     }
 }
+
+@media(max-width: 800px) {
+    .form-control {
+        width: 70%;
+    }
+}
+
+@media(max-width: 600px) {
+    .form-control {
+        width: 80%;
+    }
+}
+
 .form-control::placeholder {
     color: #f4f4f2;
     opacity: 1;
 }
+
 .form-control[type=text]:focus {
     background-color: #f4f4f2;
     color: #34495E;
@@ -82,18 +86,25 @@ form .submit {
     color: #34495E;
     width: 20%
 }
-form .submit:hover {
-    background-color: #F08080; 
+
+#formSubmit:hover {
+    background-color: #F08080;
     color: #f4f4f2;
 }
+
+#formSubmit2:hover {
+    background-color: #7B7D7D;
+    color: #f4f4f2;
+}
+
 @media(max-width: 800px) {
     form .submit {
-      width: 40%;
-    }
-}
-@media(max-width: 700px) {
-    form .submit {
-      width: 40%;
+        width: 40%;
     }
 }
 
+@media(max-width: 700px) {
+    form .submit {
+        width: 40%;
+    }
+}

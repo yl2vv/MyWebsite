@@ -1,149 +1,159 @@
 #skills {
-    height: 140vh;
-    text-align: center;
-    overflow:hidden;
+  height: 140vh;
+  text-align: center;
+  overflow: hidden;
 }
 
 .skills {
-    margin-top: 45px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  margin-top: 45px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .scene {
-    perspective: 400vmin;
-    transform-style: preserve-3d;
-    width: 80vmin;
-    height: 80vmin;
-    top: 10vmin;
-    left: 10vmin;
-  }
-  
-  .sphere {
-    transform-style: preserve-3d;
-    animation: rotate 30s infinite linear;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform-origin: 50% 50%;
-    top: 0;
-    left: 0;
-  }
-  
-  .hemisphere {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transform-origin: 50% 50%;
-    transform: rotateX(90deg);
-  }
-  
-  .hemisphere:nth-child(2) {
-    transform: rotateX(-90deg);
-  }
-
-  .fasSkills {
-    padding: 30px;
-    font-size: 50px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    color: white;
-  }
-    .fasSkills:hover {
-        text-decoration: none;
-        color: #F08080;
-      }
-  
-  .face {
-    position: absolute;
-    width: 40vmin;
-    height: 40vmin;
-    transform-style: preserve-3d;
-    transform-origin: 50% 0;
-    top: 50%;
-    left: 20vmin;
-    font-size: 100px;
-    padding-top: 70px;
-  }
-
-  .Skillsfa {
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
+  perspective: 400vmin;
+  transform-style: preserve-3d;
+  width: 80vmin;
+  height: 80vmin;
+  top: 10vmin;
+  left: 10vmin;
 }
-  
-  .face:nth-child(1) {
-    transform: translateZ(-41.6vmin) rotateZ(36deg) translateY(-6.8vmin) rotateX(143deg);
-  }
-  
-  .face:nth-child(2) {
-    transform: translateZ(-41.6vmin) rotateZ(108deg) translateY(-6.8vmin) rotateX(143deg);
-  }
-  
-  .face:nth-child(3) {
-    transform: translateZ(-41.6vmin) rotateZ(180deg) translateY(-6.8vmin) rotateX(143deg);
-  }
-  
-  .face:nth-child(4) {
-    transform: translateZ(-41.6vmin) rotateZ(252deg) translateY(-6.8vmin) rotateX(143deg);
-  }
-  
-  .face:nth-child(5) {
-    transform: translateZ(-41.6vmin) rotateZ(-36deg) translateY(-6.8vmin) rotateX(143deg);
-  }
-  
-  .face:nth-child(6) {
-    transform: translateZ(-26.8vmin) rotateZ(36deg) translateY(-33.2vmin) rotateX(100deg);
-  }
-  
-  .face:nth-child(7) {
-    transform: translateZ(-26.8vmin) rotateZ(108deg) translateY(-33.2vmin) rotateX(100deg);
-  }
-  
-  .face:nth-child(8) {
-    transform: translateZ(-26.8vmin) rotateZ(180deg) translateY(-33.2vmin) rotateX(100deg);
-  }
-  
-  .face:nth-child(9) {
-    transform: translateZ(-26.8vmin) rotateZ(252deg) translateY(-33.2vmin) rotateX(100deg);
-  }
-  
-  .face:nth-child(10) {
-    transform: translateZ(-26.8vmin) rotateZ(-36deg) translateY(-33.2vmin) rotateX(100deg);
-  }
-  
-  .face:nth-child(11) {
-    transform: translateZ(-26.8vmin) rotateZ(36deg) translateY(-33.2vmin) rotateX(100deg);
-  }
-  
-  @keyframes rotate {
-    0% {
-  transform: rotateZ(25deg) rotateX(0deg) rotateY(0deg);
-    }
-    50% {
-  transform: rotateZ(-25deg) rotateX(180deg) rotateY(180deg);
-    }
-    100% {
-  transform: rotateZ(25deg) rotateX(360deg) rotateY(360deg);
-    }
-  }
 
-  .skillsTextContainer {
-      margin-top: 30px;
-  }
+.sphere {
+  transform-style: preserve-3d;
+  animation: rotate 30s infinite linear;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: 50% 50%;
+  top: 0;
+  left: 0;
+}
 
-  .skillsText {
-    font-size: 16px;
-    text-decoration: none;
-  }
+.hemisphere {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform-origin: 50% 50%;
+  transform: rotateX(90deg);
+}
 
-  .aSkills {
-      color: #F08080;
+.hemisphere:nth-child(2) {
+  transform: rotateX(-90deg);
+}
+
+.fasSkills {
+  padding: 30px;
+  font-size: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: white;
+}
+
+#faSkills:hover {
+  text-decoration: none;
+  color: #F08080;
+}
+
+#faSkills2:hover {
+  text-decoration: none;
+  color: #7B7D7D;
+}
+
+.face {
+  position: absolute;
+  width: 40vmin;
+  height: 40vmin;
+  transform-style: preserve-3d;
+  transform-origin: 50% 0;
+  top: 50%;
+  left: 20vmin;
+  font-size: 100px;
+  padding-top: 70px;
+}
+
+.Skillsfa {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.face:nth-child(1) {
+  transform: translateZ(-41.6vmin) rotateZ(36deg) translateY(-6.8vmin) rotateX(143deg);
+}
+
+.face:nth-child(2) {
+  transform: translateZ(-41.6vmin) rotateZ(108deg) translateY(-6.8vmin) rotateX(143deg);
+}
+
+.face:nth-child(3) {
+  transform: translateZ(-41.6vmin) rotateZ(180deg) translateY(-6.8vmin) rotateX(143deg);
+}
+
+.face:nth-child(4) {
+  transform: translateZ(-41.6vmin) rotateZ(252deg) translateY(-6.8vmin) rotateX(143deg);
+}
+
+.face:nth-child(5) {
+  transform: translateZ(-41.6vmin) rotateZ(-36deg) translateY(-6.8vmin) rotateX(143deg);
+}
+
+.face:nth-child(6) {
+  transform: translateZ(-26.8vmin) rotateZ(36deg) translateY(-33.2vmin) rotateX(100deg);
+}
+
+.face:nth-child(7) {
+  transform: translateZ(-26.8vmin) rotateZ(108deg) translateY(-33.2vmin) rotateX(100deg);
+}
+
+.face:nth-child(8) {
+  transform: translateZ(-26.8vmin) rotateZ(180deg) translateY(-33.2vmin) rotateX(100deg);
+}
+
+.face:nth-child(9) {
+  transform: translateZ(-26.8vmin) rotateZ(252deg) translateY(-33.2vmin) rotateX(100deg);
+}
+
+.face:nth-child(10) {
+  transform: translateZ(-26.8vmin) rotateZ(-36deg) translateY(-33.2vmin) rotateX(100deg);
+}
+
+.face:nth-child(11) {
+  transform: translateZ(-26.8vmin) rotateZ(36deg) translateY(-33.2vmin) rotateX(100deg);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(25deg) rotateX(0deg) rotateY(0deg);
   }
+  50% {
+    transform: rotateZ(-25deg) rotateX(180deg) rotateY(180deg);
+  }
+  100% {
+    transform: rotateZ(25deg) rotateX(360deg) rotateY(360deg);
+  }
+}
+
+.skillsTextContainer {
+  margin-top: 30px;
+}
+
+.skillsText {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+#aSkills {
+  color: #F08080;
+}
+
+#aSkills2 {
+  color: #7B7D7D;
+}

@@ -1,12 +1,10 @@
 #about {
-    height: 100vh;
-    text-align: center;
-    margin-top: 10vh;
-    /* background-color: yellow; */
-  }
+  height: 100vh;
+  text-align: center;
+  margin-top: 10vh;
+}
 
 .aboutMe {
-  /* background-color: green; */
   height: 85%;
   display: flex;
   flex-direction: row;
@@ -15,7 +13,6 @@
 }
 
 .myBio {
-  /* background-color: orange; */
   width: 50%;
   text-align: left;
   overflow-y: scroll;
@@ -32,6 +29,7 @@
   margin-left: 20%;
   border-radius: 2%;
 }
+
 .myImage:hover {
   width: 61%;
   height: 91%;
@@ -47,20 +45,27 @@
   border-radius: 2%;
   font-size: 16px;
 }
+
 .aboutMeText:hover {
-  overflow:auto;
+  overflow: auto;
   background-color: rgb(214, 234, 248, 0.8);
 }
-.aboutMeText:hover > span.ibm {
-  color:#1F70C1;
-}
-.aboutMeText:hover > span.uva {
-  color:#EB984E;
-}
-.aboutMeText:hover > span.myGoal {
-  color:#F08080;
+
+.aboutMeText:hover>span.ibm {
+  color: #1F70C1;
 }
 
+.aboutMeText:hover>span.uva {
+  color: #EB984E;
+}
+
+.aboutMeText:hover> #myGoal {
+  color: #F08080;
+}
+
+.aboutMeText:hover> #myGoal2 {
+  color: #7B7D7D;
+}
 
 .BioHeader {
   color: #f4f4f2;

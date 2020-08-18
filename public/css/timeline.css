@@ -1,118 +1,129 @@
 .timelineContainer {
-    /* background-color: red; */
-    width: 100%;
-    padding-top: 70px;
-    margin: auto;
-    height: 80vh;
-    text-align: center;
-  }
-  
-  .timelineHeader {
-    color: #f4f4f2;
-    padding-bottom: 20px;
-    animation-name: floating;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-  }
-  
-  .timeline {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
-    background-color: #D6EAF8;
-    border-radius: 15px;
-    height: 5px;
-    width: 85%;
-    margin-left: 7.5%;
-  }
-  
+  width: 100%;
+  padding-top: 70px;
+  margin: auto;
+  height: 80vh;
+  text-align: center;
+}
+
+.timelineHeader {
+  color: #f4f4f2;
+  padding-bottom: 20px;
+  animation-name: floating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  background-color: #D6EAF8;
+  border-radius: 15px;
+  height: 5px;
+  width: 85%;
+  margin-left: 7.5%;
+}
+
+.fasTime {
+  font-size: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: #D6EAF8;
+}
+
+@media (max-width: 1000px) {
   .fasTime {
-    font-size: 50px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    color: #D6EAF8 ;
+    font-size: 30px;
   }
-  @media (max-width: 1000px) {
-    .fasTime {
-      font-size: 30px;
-    }
-  }
-  
+}
+
+.fasTime:hover {
+  font-size: 60px;
+  text-decoration: none;
+}
+
+@media (max-width: 1000px) {
   .fasTime:hover {
-    /* color: #F08080; */
-    font-size: 60px;
-    text-decoration: none;
+    font-size: 40px;
   }
-  @media (max-width: 1000px) {
-    .fasTime:hover {
-      font-size: 40px;
-    }
-  }
-  
+}
+
+.iconContainer {
+  background-color: #52BE80;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.iconContainer:hover {
+  height: 60px;
+  width: 60px;
+}
+
+#to-be {
+  background-color: #F08080;
+}
+
+#to-be2 {
+  background-color: #7B7D7D;
+}
+
+.iconContainer.to-be {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.iconContainer.to-be:hover {
+  height: 60px;
+  width: 60px;
+}
+
+@media (max-width: 1000px) {
   .iconContainer {
-    background-color: #52BE80;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
   }
-  .iconContainer:hover {
-    height: 60px;
-    width: 60px;
-  }
-  
-  .iconContainer.to-be{
-    background-color: #F08080;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
+  .iconContainer.to-be {
+    height: 30px;
+    width: 30px;
   }
   .iconContainer.to-be:hover {
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
   }
-  
-  @media (max-width: 1000px) {
-    .iconContainer {
-      height: 30px;
-      width: 30px;
-    }
-    .iconContainer.to-be {
-      height: 30px;
-      width: 30px;
-    }
-    .iconContainer.to-be:hover {
-      height: 40px;
-      width: 40px;
-    }
-    .iconContainer:hover {
-      height: 40px;
-      width: 40px;
-    }
+  .iconContainer:hover {
+    height: 40px;
+    width: 40px;
   }
+}
 
-  #timelineText {
-      background-color: rgb(214, 234, 248, 0.5);
-      margin-top: 60px;
-      height: 30%;
-      width: 40%;
-      margin-left: 30%;
-      border: 5px solid #f4f4f2;
-      border-radius: 2%;
-  }
+#timelineText {
+  background-color: rgb(214, 234, 248, 0.5);
+  margin-top: 60px;
+  height: 30%;
+  width: 40%;
+  margin-left: 30%;
+  border: 5px solid #f4f4f2;
+  border-radius: 2%;
+}
 
-  #timelineYear {
-    color: #34495E;
-    font-size: 25px;;
-    padding-top: 10px;
-  }
+#timelineYear {
+  color: #f4f4f2;
+  font-size: 25px;
+  ;
+  padding-top: 10px;
+}
 
-  .timelineTextYear {
-      font-weight: bold;
-  }
-  .sep {
-    color: #5D6D7E;
+.timelineTextYear {
+  font-weight: bold;
+}
+
+.sep {
+  color: #5D6D7E;
 }
