@@ -1,11 +1,11 @@
 #skills {
-    height: 120vh;
+    height: 140vh;
     text-align: center;
     overflow:hidden;
 }
 
 .skills {
-    margin-top: 70px;
+    margin-top: 45px;
     width: 100%;
     display: flex;
     justify-content: center;

@@ -1,4 +1,93 @@
 #projects {
-    height: 100vh;
+    height: 140vh;
     text-align: center;
+}
+
+.projectsBody {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.project {
+    width: 40vh;
+    height: 40vh;
+    border: 5px solid #f4f4f2;
+    border-radius: 2%;
+    padding: 7px;
+    overflow-y: scroll;
+}
+@media (max-width: 1000px) {
+    .project {
+        width: 35vh;
+        height: 35vh;
+    }
+}
+
+.project.HoosSearching {
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/images/hoosSearching.jpg");
+}
+
+.project.quickTutor {
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/images/quickTutor.png");
+}
+
+.project.website {
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/images/website.png");
+}
+
+.hiddenText {
+    display: none;
+}
+.project:hover {
+    width: 58vh;
+    height: 58vh;
+    background: rgb(214, 234, 248, 0.5);
+}
+@media (max-width: 1000px) {
+    .project:hover {
+        width: 37vh;
+        height: 37vh;
+    }
+}
+.project:hover .hiddenText {
+    display:block;
+}
+
+.hiddenText {
+    width: 100%;
+    height: 100%;
+}
+
+.projectTitle {
+    text-decoration: underline;
+}
+
+.projectInfo {
+    font-size: 14px;
+}
+
+.projectLanguages {
+    font-size: 12px;
+}
+
+.projectTechnologies {
+    font-size: 14px;
+}
+
+.projectLink {
+    padding: 0;
 }
