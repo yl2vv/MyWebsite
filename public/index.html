@@ -17,9 +17,11 @@
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/bubbles.css">
+  <link rel="stylesheet" href="css/clouds.css">
+  <link rel="stylesheet" href="css/switch.css">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body id="body" data-spy="scroll" data-target=".navbar" data-offset="50">
   <!-- NavBar -->
   <nav id ="navbar" class="navbar navbar-expand-md navbar-dark sticky-top">
     <div class="container-fluid">
@@ -79,6 +81,14 @@
             <a href="https://github.com/yl2vv/" target="_blank" class="fab fa-github"></a>
             <a href="images/resume.pdf" target="_blank" class="fa fa-paperclip"></a>
             <a href="https://open.spotify.com/user/225d4wfyn23jrjaoude2efeai?si=q4-6pfBYSqOO3g9wm1KQxQ" target="_blank" class="fab fa-spotify"></a>
+          </div>
+          <div class="switchContainer">
+            <i class="faSwitch fas fa-water"></i>
+            <label class="switch">
+              <input type="checkbox" id="switch" onclick="changeView()">
+              <span class="slider round fas fa-water"></span>
+            </label>
+            <i class="faSwitch fas fa-sun"></i>
           </div>
         </div>
       </div>
@@ -170,27 +180,27 @@
             <div class="sphere">
               <div class="hemisphere">
                 <div class="face fab fa-microsoft"></div>
-                <div class="face fab fa-linux"></div>
-                <div class="face fasSkills fas fa-terminal"></div>
+                <div class="face fab fa-redhat"></div>
+                <div class="face fab fa-linux "></div>
                 <div class="face fasSkills fas fa-code-branch"></div>
                 <div class="face fab fa-git-alt"></div>
-                <div class="face fab fa-github"></div>
-                <div class="face fab fa-redhat"></div>
-                <div class="face fab fa-trello"></div>
+                <div class="face fab fa-github Skillsfa"></div>
+                <div class="face fasSkills fas fa-terminal"></div>
+                <div class="face fab fa-aws"></div>
                 <div class="face fab fa-angular"></div>
                 <div class="face fab fa-jira"></div>
               </div>
               <div class="hemisphere">
-                <div class="face fab fa-java"></div>
-                <div class="face fab fa-js-square"></div>
+                <div class="face fasSkills fas fa-code"></div>
+                <div class="face fab fa-r-project"></div>  
                 <div class="face fab fa-python"></div>
                 <div class="face fab fa-html5"></div>
                 <div class="face fab fa-css3"></div>
                 <div class="face fab fa-react"></div>
                 <div class="face fab fa-node"></div>
                 <div class="face fab fa-npm"></div>
-                <div class="face fasSkills fas fa-code"></div>
-                <div class="face fab fa-r-project"></div>
+                <div class="face fab fa-java"></div>
+                <div class="face fab fa-js-square"></div>
               </div>
             </div>
           </div>
@@ -245,16 +255,40 @@
     </div>
   </div>
 
+  <!-- <div id="background-wrap">
+    <div class="c1">
+        <div class="cloud"></div>
+    </div>
+
+    <div class="c2">
+        <div class="cloud"></div>
+    </div>
+
+    <div class="c3">
+        <div class="cloud"></div>
+    </div>
+
+    <div class="c4">
+        <div class="cloud"></div>
+    </div>
+
+    <div class="c5">
+        <div class="cloud"></div>
+    </div> -->
+</div>
+
   <div class="bottom">
     <footer>You've reached the bottom of the ocean... created by James Yubin Lim</footer>
     <div class="meWave"></div>
+  
+  
+  
   </div>
-
-  <script src="code/common.js"></script>
+  <!-- <script src="code/common.js"></script>
   <script src="code/api.js"></script>
   <script src="code/conversation.js"></script>
   <script src="code/payload.js"></script>
-  <script src="code/global.js"></script>
+  <script src="code/global.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>  
@@ -319,5 +353,25 @@
     document.getElementById('timelineYear').innerHTML = "Hover over the timeline";
     document.getElementById('timelinePlace').innerHTML = "See where I have lived!";
   },);
+</script>
+<script>
+  function changeView() {
+  var checkBox = document.getElementById("switch");
+
+  if (checkBox.checked == true){
+    console.log("sunset");
+    document.getElementById("body").style.backgroundImage = "linear-gradient(to bottom, #f7dc6f, #f7c459, #f6ab49, #f4903e, #f0753a, #e85b4d, #d7465d, #bf386b,  #313b5c, #212f3c)";
+    document.getElementById("navbar").style.backgroundColor = "rgba(244, 208, 63, 0.7)";
+    // document.getElementsByClassName(names);
+  } else {
+    console.log("ocean");
+    document.getElementById("body").style.backgroundImage = "linear-gradient(to bottom, #85c1e9, #77b9e6, #6ab2e4, #5baae2, #4ca2df, #4495cf, #3c88bf, #347cb0, #326891, #2d5474, #284158, #212f3d)";
+    document.getElementById("navbar").style.backgroundColor = "rgba(93, 173, 226, 0.7)";
+    
+    // document.getElementsByClassName(names);
+  }
+
+}
+
 </script>
 </html>

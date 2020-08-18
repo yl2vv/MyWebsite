@@ -2,7 +2,6 @@
     height: 120vh;
     text-align: center;
     overflow:hidden;
-    margin-top: 10vh;
 }
 
 .skills {
@@ -23,7 +22,7 @@
   
   .sphere {
     transform-style: preserve-3d;
-    animation: rotate 20s infinite linear;
+    animation: rotate 30s infinite linear;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -72,6 +71,13 @@
     padding-top: 70px;
   }
 
+  .Skillsfa {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
   
   .face:nth-child(1) {
     transform: translateZ(-41.6vmin) rotateZ(36deg) translateY(-6.8vmin) rotateX(143deg);
@@ -119,13 +125,13 @@
   
   @keyframes rotate {
     0% {
-  transform: rotateZ(25deg) rotateX(20deg) rotateY(0deg);
+  transform: rotateZ(25deg) rotateX(0deg) rotateY(0deg);
     }
     50% {
-  transform: rotateZ(-25deg) rotateX(-20deg) rotateY(180deg);
+  transform: rotateZ(-25deg) rotateX(180deg) rotateY(180deg);
     }
     100% {
-  transform: rotateZ(25deg) rotateX(20deg) rotateY(360deg);
+  transform: rotateZ(25deg) rotateX(360deg) rotateY(360deg);
     }
   }
 
