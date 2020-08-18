@@ -30,6 +30,7 @@
   background-image: url("/images/myImage.JPG");
   border: 5px solid #f4f4f2;
   margin-left: 20%;
+  border-radius: 2%;
 }
 .myImage:hover {
   width: 61%;
@@ -37,18 +38,21 @@
 }
 
 .aboutMeText {
-  border: 2px solid #f4f4f2;
+  border: 5px solid #f4f4f2;
   padding: 20px;
   background-color: rgb(214, 234, 248, 0.5);
   margin: 5px;
   max-height: 90%;
-  overflow-y: scroll;
+  overflow: hidden;
+  border-radius: 2%;
+  font-size: 16px;
 }
 .aboutMeText:hover {
+  overflow:auto;
   background-color: rgb(214, 234, 248, 0.8);
 }
 .aboutMeText:hover > span.ibm {
-  color:#006699;
+  color:#1F70C1;
 }
 .aboutMeText:hover > span.uva {
   color:#EB984E;
@@ -61,4 +65,5 @@
 .BioHeader {
   color: #f4f4f2;
   text-align: center;
+  font-size: 30px;
 }
