@@ -119,9 +119,10 @@
             </div>
             <div class="carousel-item">
               <div>
-                <h2 class="BioHeader">WHO I AM</h2>
                 <p class="aboutMeText">
-                  My name is Yubin Lim. I am a fourth year at the <span class="uva">University of Virginia</span> majoring in computer science in the College of Arts and Sciences.<br><br>
+                  <span class="BioHeader">WHO I AM</span> <br><br>
+                  My name is James Yubin Lim. <br>
+                  I am a fourth year at the <span class="uva">University of Virginia</span> majoring in computer science in the College of Arts and Sciences.<br><br>
                   Last summer I was a Back-End Developer Intern at <span class="ibm">IBM</span> and currently continuing as a co-op.
                 </p>
               </div>
@@ -216,6 +217,36 @@
       <div class="sectionTitle">
         <h1 class="sectionHead">Experience</h1>
       </div>
+      <div class="experiences">
+
+        <div class="eachExp ibmer">
+          <div class="ibmPic"></div>
+          <div class="experienceText">
+            <p class="expTitle">Back End Developer Intern<span class="expSpan"> Summer 2020 - Present</span></p>
+            <p class="expT">
+              I was involved in planning and developing a web application that allows Worksoft users of IBM to log themselves out of their Windows OS when their session gets hung. 
+              Gained front end experience in Node.js, Express JS, HTML, and CSS. 
+              Gained back end experience in Bash and Ansible. 
+              Worked in an Agile environment where I participated in daily scrum meetings and worked through sprints using Jira. <br>
+              View the badges and certificates I earned during my time at IBM through <a href="https://www.linkedin.com/in/yl2vv/" target="_blank">LinkedIn</a> 
+            </p>
+          </div>
+          <p>
+
+          </p>
+        </div>
+        <div class="eachExp wahoo">
+          <div class="uvaPic"></div>
+          <div class="experienceText">
+            <p class="expTitle">Teaching Assistant<span class="expSpan"> Advanced Software Development Methods</span></p>
+            <p class="expT">
+              I was a TA for CS2110, a course focused on the software development life cycle and processes and learning object-oriented programming through Java. 
+              Held office hours, facilitated labs, and attended lectures to assist student on assignments and answer any questions. 
+              Proctored exams and helped grade assignments.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="projects">
@@ -232,16 +263,16 @@
 
         <div class="contactForm">
           <form id="contact-form" method="" action="">
-            <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
-            <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
-            <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+            <input name="name" type="text" class="form-control" placeholder="Your Name" disabled><br>
+            <input name="email" type="email" class="form-control" placeholder="Your Email" disabled><br>
+            <textarea name="message" class="form-control" placeholder="Message" rows="4" disabled></textarea><br>
             <input type="submit" class="form-control submit" value="SEND MESSAGE">
           </form>
         </div>
 
     </div>
 
-    <div id="background-wrap">
+    <!-- <div id="background-wrap">
       <div class="bubble x1"></div>
       <div class="bubble x2"></div>
       <div class="bubble x3"></div>
@@ -253,9 +284,9 @@
       <div class="bubble x9"></div>
       <div class="bubble x10"></div>
     </div>
-  </div>
+  </div> -->
 
-  <!-- <div id="background-wrap">
+  <div id="background-wrap">
     <div class="c1">
         <div class="cloud"></div>
     </div>
@@ -274,11 +305,11 @@
 
     <div class="c5">
         <div class="cloud"></div>
-    </div> -->
+    </div>
 </div>
 
   <div class="bottom">
-    <footer>You've reached the bottom of the ocean... created by James Yubin Lim</footer>
+    <footer id="footer">You have reached the bottom of the ocean... created by James Yubin Lim</footer>
     <div class="meWave"></div>
   
   
@@ -363,11 +394,12 @@
     document.getElementById("body").style.backgroundImage = "linear-gradient(to bottom, #f7dc6f, #f7c459, #f6ab49, #f4903e, #f0753a, #e85b4d, #d7465d, #bf386b,  #313b5c, #212f3c)";
     document.getElementById("navbar").style.backgroundColor = "rgba(244, 208, 63, 0.7)";
     // document.getElementsByClassName(names);
+    document.getElementById('footer').innerHTML = "The sun has set... created by James Yubin Lim";
   } else {
     console.log("ocean");
     document.getElementById("body").style.backgroundImage = "linear-gradient(to bottom, #85c1e9, #77b9e6, #6ab2e4, #5baae2, #4ca2df, #4495cf, #3c88bf, #347cb0, #326891, #2d5474, #284158, #212f3d)";
     document.getElementById("navbar").style.backgroundColor = "rgba(93, 173, 226, 0.7)";
-    
+    document.getElementById('footer').innerHTML = "You have reached the bottom of the ocean... created by James Yubin Lim";
     // document.getElementsByClassName(names);
   }
 
