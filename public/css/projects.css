@@ -14,18 +14,17 @@
 }
 
 .project {
-    width: 40vh;
-    height: 40vh;
+    width: 300px;
+    height: 300px;
     border: 5px solid #f4f4f2;
     border-radius: 2%;
-    padding: 7px;
     overflow-y: scroll;
 }
 
 @media (max-width: 1000px) {
     .project {
-        width: 35vh;
-        height: 35vh;
+        width: 250px;
+        height: 250px;
     }
 }
 
@@ -55,20 +54,25 @@
 }
 
 .project:hover {
-    width: 58vh;
-    height: 58vh;
+    width: 400px;
+    height: 400px;
     background: rgb(214, 234, 248, 0.5);
+    overflow-y: scroll;
 }
 
 @media (max-width: 1000px) {
     .project:hover {
-        width: 37vh;
-        height: 37vh;
+        width: 320px;
+        height: 320px;
     }
 }
 
 .project:hover .hiddenText {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 5px 5px;
 }
 
 .hiddenText {

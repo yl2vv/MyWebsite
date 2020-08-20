@@ -139,7 +139,7 @@
 
 @media (max-width: 1000px) {
   .fa {
-    padding: 20px;
+    padding: 10px 10px;
     font-size: 20px;
     width: 30px;
     text-align: center;

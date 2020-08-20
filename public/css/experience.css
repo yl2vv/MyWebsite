@@ -31,7 +31,7 @@
   0% {
     background-color: rgb(214, 234, 248, 0.5);
   }
-  20% {
+  3% {
     background-color: #1F70C1;
   }
 }
@@ -44,7 +44,7 @@
   0% {
     background-color: rgb(214, 234, 248, 0.5);
   }
-  20% {
+  3% {
     background-color: #EB984E;
   }
 }
@@ -72,7 +72,6 @@
 }
 
 .experienceText {
-  /* background-color: purple; */
   width: 89%;
   height: 100%;
   text-align: left;
@@ -81,6 +80,9 @@
   padding-left: 5px;
   padding-right: 10px;
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .expT {

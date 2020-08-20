@@ -39,6 +39,7 @@ function addElement(parentId, elementTag, elementclass) {
     ChangeColor("icon", "icon2");
     ChangeColor("icon", "icon2");
     ChangeColor("icon", "icon2");
+    ChangeColor("icon", "icon2");
 
     ChangeColor("formSubmit", "formSubmit2");
 
@@ -103,6 +104,7 @@ function addElement(parentId, elementTag, elementclass) {
     ChangeColor("myGoal2","myGoal");
     ChangeColor("myGoal2","myGoal");
 
+    ChangeColor("icon2", "icon");
     ChangeColor("icon2", "icon");
     ChangeColor("icon2", "icon");
     ChangeColor("icon2", "icon");

@@ -48,7 +48,7 @@
 
 .aboutMeText:hover {
   overflow: auto;
-  background-color: rgb(214, 234, 248, 0.8);
+  background-color: rgb(214, 234, 248, 0.6);
 }
 
 .aboutMeText:hover>span.ibm {
