@@ -72,7 +72,7 @@
   height: 2.5rem;
   padding-left: 0.125rem;
   margin-bottom: -0.125rem;
-  font-family: Helvetica, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: Verdana, Tahoma, Helvetica, Arial;
   display: block;
   border-bottom: 0.0625rem solid #f4f4f2;
   margin-left: 0.5rem;
@@ -164,4 +164,25 @@
 #icon2:hover {
   color: #7B7D7D;
   text-decoration: none;
+}
+
+.chatbothelp {
+  width: 60%;
+  margin-bottom: 5px;
+}
+@media (max-width: 770px) {
+  .chatbothelp {
+    width: 80%;
+    font-size: 0.8rem;
+  }
+}
+
+.helpbtn {
+  border-radius: 60%;
+  size: 5px;
+}
+
+.card-body {
+  background-color: rgb(214, 234, 248, 0.5);
+  color: #f4f4f2;
 }

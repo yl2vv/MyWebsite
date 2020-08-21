@@ -3,7 +3,7 @@ html {
 }
 
 #body {
-  font-family: Helvetica, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: Verdana, Tahoma, Helvetica, Arial;
   margin: 0;
   padding: 0;
   background-image: linear-gradient(to bottom, #85c1e9, #77b9e6, #6ab2e4, #5baae2, #4ca2df, #4495cf, #3c88bf, #347cb0, #326891, #2d5474, #284158, #212f3d);
